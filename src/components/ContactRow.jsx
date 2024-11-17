@@ -6,7 +6,7 @@ console.log("Contact Row..");
 
     return (
     
-       <tr onClick={()=>{setSelectedContactId(contact.id)}}>
+       <tr onClick={()=>{setSelectedContactId(contact.id)}} className="contact-row">
         <td>{contact.name}</td>
         <td>{contact.email}</td>
         <td>{contact.phone}</td>

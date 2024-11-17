@@ -10,8 +10,8 @@ const [selectedContactId, setSelectedContactId] = useState(null);
 
   return (
     <>
-      <h1>Contact List</h1>
-      {selectedContactId ? (<SelectedContact selectedContactId={selectedContactId}  />): <ContactList setSelectedContactId={setSelectedContactId} /> }
+      {/* <h1>Contact List</h1> */}
+      {selectedContactId ? (<SelectedContact setSelectedContactId={setSelectedContactId} selectedContactId={selectedContactId}  />): <ContactList setSelectedContactId={setSelectedContactId} /> }
     </>
   )
 }
