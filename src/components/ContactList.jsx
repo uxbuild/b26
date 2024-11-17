@@ -38,18 +38,21 @@ useEffect(()=>{
 
   return ( 
     <>
-      <table>
-        <thead>
+      <h1>Contact List</h1>
+      <table className="table contact-list">
+        {/* <thead>
           <tr>
             <th colSpan="3">Contact List</th>
           </tr>
+        </thead> */}
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Phone</td>
-          </tr>
           {
             // Map over data here
             contacts.map((contact) => {
@@ -60,6 +63,7 @@ useEffect(()=>{
         </tbody>
       </table>
     </>
+    
   );
 }
 
